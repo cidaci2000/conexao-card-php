@@ -1,0 +1,8 @@
+CREATE TABLE compras_usuario (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    id_produto INT NOT NULL,
+    nome_produto VARCHAR(255) NOT NULL,
+    preco DECIMAL(10, 2) NOT NULL,
+    quantidade INT NOT NULL,
+    data_compra DATETIME DEFAULT CURRENT_TIMESTAMP
+);

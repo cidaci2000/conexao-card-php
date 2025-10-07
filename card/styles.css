@@ -1,0 +1,204 @@
+/* Reset Básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* --- 1. Navbar (Navegação) --- */
+.navbar {
+    background-color: #2c3e50; /* Azul escuro */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.logo span {
+    color: #e74c3c; /* Vermelho/Laranja */
+    font-weight: 700;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #e74c3c;
+}
+
+.btn-carrinho {
+    background-color: #3498db; /* Azul claro */
+    border-radius: 5px;
+    padding: 5px 10px !important;
+    transition: background-color 0.3s;
+}
+
+.btn-carrinho:hover {
+    background-color: #2980b9;
+    color: white !important;
+}
+
+
+/* --- 2. Hero Section (Banner de chamada) --- */
+.hero-section {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #ecf0f1;
+    margin-bottom: 40px;
+    border-radius: 8px;
+}
+
+.hero-section h2 {
+    color: #2c3e50;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+
+/* --- 3. Cards de Produto (Grid) --- */
+.product-grid {
+    display: grid;
+    /* 3 colunas, ajusta para telas menores */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 30px;
+    padding: 20px 0;
+}
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Efeito de elevação */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.card .description {
+    color: #7f8c8d;
+    font-size: 0.9em;
+    margin-bottom: 15px;
+    height: 36px; /* Altura fixa para alinhar botões */
+}
+
+.card .price {
+    font-size: 1.5em;
+    color: #e74c3c;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.btn-compra {
+    background-color: #27ae60; /* Verde */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.btn-compra:hover {
+    background-color: #2ecc71;
+}
+
+/* --- 4. Footer (Rodapé) --- */
+.footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 40px 0 10px;
+    margin-top: 50px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+}
+
+.footer-section {
+    flex-basis: 25%; /* Ajusta o tamanho das colunas */
+    min-width: 200px;
+    margin-bottom: 20px;
+}
+
+.footer-section h4 {
+    color: #3498db;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+
+.footer-section p, .footer-section li {
+    font-size: 0.9em;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section a {
+    color: #ecf0f1;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section a:hover {
+    color: #3498db;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 10px;
+    border-top: 1px solid #34495e;
+}
